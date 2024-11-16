@@ -21,3 +21,11 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+const classmarco = students.find((event) => {
+  if(event.name == 'Marco Lanci'){
+    return (event.class);
+  }
+}).class;
+
+console.log(classmarco);
